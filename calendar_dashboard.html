@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .timeline-line { position: absolute; left: 16px; top: 0; bottom: 0; width: 2px; background: #e5e7eb; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <div class="min-h-screen flex flex-col md:flex-row">
+        <aside class="w-full md:w-64 bg-white border-r border-gray-200 p-6">
+            <h1 class="text-xl font-bold mb-6">City Events</h1>
+            <div id="filter-container" class="space-y-4">
+                <div class="space-y-2">
+                    <h3 class="font-bold text-sm text-gray-500 uppercase">Filters</h3>
+                    <label class="flex items-center space-x-2 font-bold cursor-pointer">
+                        <input type="checkbox" id="select-all" onchange="toggleAll()">
+                        <span>Select All</span>
+                    </label>
+                    <div id="city-filters" class="space-y-1 pl-4">
+                        <!-- Filters will be injected here -->
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-8">
+            <header class="mb-8">
+                <h2 class="text-2xl font-semibold">Upcoming Timeline</h2>
+                <p class="text-gray-500" id="filter-status">Loading events...</p>
+            </header>
+            <div id="timeline-container" class="relative space-y-8">
+                <!-- Timeline events will be injected here -->
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Placeholder for data that will be loaded from external JSON files
+        let eventData = {}; 
+        let selectedCities = new Set();
+        let allCities = [];
+
+        async function init() {
+            // This is where we will fetch the data from your JSON files
+            // For now, this is a clean slate waiting for your first file.
+            document.getElementById('filter-status').innerText = "Ready to load data.";
+        }
+
+        function toggleAll() {
+            // Logic to toggle all filters will go here
+        }
+
+        function toggleCity(city) {
+            // Logic to filter by city will go here
+        }
+
+        function renderTimeline() {
+            // Logic to render the events will go here
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
