@@ -6,34 +6,66 @@
     <title>Event Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans p-8">
-    <header class="mb-8">
-        <h2 class="text-2xl font-semibold">Upcoming Timeline</h2>
+<body class="bg-gray-100 min-h-screen p-4 md:p-8">
+    <header class="max-w-4xl mx-auto mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">Event Dashboard</h1>
+        <div id="filter-container" class="mt-4 flex gap-2 flex-wrap">
+            <button onclick="filterEvents('all')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">All</button>
+            <button onclick="filterEvents('Novi')" class="bg-white border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-200">Novi</button>
+        </div>
     </header>
 
-    <div id="timeline-container" class="space-y-4">
-        <!-- Events will load here -->
-    </div>
+    <main id="timeline-container" class="max-w-4xl mx-auto space-y-6">
+        <!-- Events load here dynamically -->
+    </main>
 
     <script>
-        async function loadEvents() {
+        let allEvents = [];
+
+        async function init() {
             try {
                 const response = await fetch('data/novi_library.json');
                 const data = await response.json();
-                const container = document.getElementById('timeline-container');
-
-                container.innerHTML = data.events.map(event => `
-                    <div class="bg-white p-4 rounded shadow border-l-4 border-blue-500">
-                        <h3 class="font-bold">${event.title}</h3>
-                        <p class="text-sm text-gray-600">${event.date} at ${event.time}</p>
-                        <a href="${event.url}" class="text-blue-500 underline text-sm" target="_blank">View Details</a>
-                    </div>
-                `).join('');
+                allEvents = data.events;
+                renderEvents(allEvents);
             } catch (err) {
-                document.getElementById('timeline-container').innerHTML = "<p>Events loading... (Ensure your data file is in the /data folder!)</p>";
+                document.getElementById('timeline-container').innerHTML = 
+                    `<div class="bg-red-100 p-4 rounded text-red-700">Error loading data. Check your file paths!</div>`;
             }
         }
-        loadEvents();
+
+        function renderEvents(events) {
+            const container = document.getElementById('timeline-container');
+            if (events.length === 0) {
+                container.innerHTML = "<p class='text-gray-500'>No events found.</p>";
+                return;
+            }
+
+            container.innerHTML = events.map(event => `
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">${event.title}</h3>
+                            <p class="text-blue-600 font-medium mt-1">${event.date} at ${event.time}</p>
+                            <p class="text-gray-600 mt-2 text-sm">${event.location}</p>
+                        </div>
+                        <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-semibold">${event.city}</span>
+                    </div>
+                    <a href="${event.url}" class="inline-block mt-4 text-blue-600 font-semibold hover:underline" target="_blank">View Details →</a>
+                </div>
+            `).join('');
+        }
+
+        function filterEvents(city) {
+            if (city === 'all') {
+                renderEvents(allEvents);
+            } else {
+                const filtered = allEvents.filter(e => e.city === city);
+                renderEvents(filtered);
+            }
+        }
+
+        init();
     </script>
 </body>
 </html>
