@@ -11,26 +11,47 @@
         <h1 class="text-3xl font-bold text-gray-800">Event Dashboard</h1>
         <div id="filter-container" class="mt-4 flex gap-2 flex-wrap">
             <button onclick="filterEvents('all')" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">All</button>
-            <button onclick="filterEvents('Novi')" class="bg-white border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-200">Novi</button>
         </div>
     </header>
 
     <main id="timeline-container" class="max-w-4xl mx-auto space-y-6">
-        <!-- Events load here dynamically -->
+        <p class="text-gray-500">Loading library data...</p>
     </main>
 
     <script>
         let allEvents = [];
+        let sources = [];
 
         async function init() {
             try {
-                const response = await fetch('data/novi_library.json');
-                const data = await response.json();
-                allEvents = data.events;
+                // Fetch the manifest to get the list of files
+                const manifestResponse = await fetch('data/event_data_manifest.json');
+                const manifest = await manifestResponse.json();
+                sources = manifest.sources;
+
+                // Create buttons dynamically
+                const filterContainer = document.getElementById('filter-container');
+                sources.forEach(source => {
+                    const btn = document.createElement('button');
+                    btn.innerText = source.city;
+                    btn.className = "bg-white border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-200";
+                    btn.onclick = () => filterEvents(source.city);
+                    filterContainer.appendChild(btn);
+                });
+
+                // Fetch all source files
+                const results = await Promise.all(
+                    sources.map(s => fetch(s.file).then(r => r.json()))
+                );
+
+                // Combine all events
+                allEvents = results.flatMap(data => data.events);
                 renderEvents(allEvents);
+
             } catch (err) {
                 document.getElementById('timeline-container').innerHTML = 
-                    `<div class="bg-red-100 p-4 rounded text-red-700">Error loading data. Check your file paths!</div>`;
+                    `<div class="bg-red-100 p-4 rounded text-red-700">Error: Could not load data. Ensure your manifest and JSON files are properly linked.</div>`;
+                console.error(err);
             }
         }
 
