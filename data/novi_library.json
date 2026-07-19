@@ -74,12 +74,62 @@
 },
 {
 "id": "npl-summer-songfest-0723",
-"title": "Summer Songfest (Paradise Park)",
+"title": "Summer Songfest",
 "date": "2026-07-23",
 "time": "18:30",
 "location": "Offsite - Paradise Park",
 "description": "Music by David Landry and the Do It Again Band.",
 "url": "https://novipl.librarycalendar.com/event/summer-songfest-27039",
+"city": "Novi"
+},
+{
+"id": "npl-tamil-read-0725",
+"title": "Tamil Summer Read-A-Thon",
+"date": "2026-07-25",
+"time": "10:30",
+"location": "Novi Public Library - Youth Activity Room",
+"description": "Five-week workshop to help your child read Tamil fluently.",
+"url": "https://novipl.librarycalendar.com/event/tamil-summer-read-thon-24621",
+"city": "Novi"
+},
+{
+"id": "npl-baby-time-0727",
+"title": "Baby Time",
+"date": "2026-07-27",
+"time": "14:00",
+"location": "Novi Public Library - West Meeting Room",
+"description": "Lap-sit program for babies 0-12 months.",
+"url": "https://novipl.librarycalendar.com/event/baby-time-25152",
+"city": "Novi"
+},
+{
+"id": "npl-sunset-stories-0729",
+"title": "Sunset Stories",
+"date": "2026-07-29",
+"time": "18:30",
+"location": "Novi Public Library - West Meeting Room",
+"description": "Family story time designed for children 0-5 years.",
+"url": "https://novipl.librarycalendar.com/event/sunset-stories-24372",
+"city": "Novi"
+},
+{
+"id": "npl-summer-songfest-0730",
+"title": "Summer Songfest",
+"date": "2026-07-30",
+"time": "18:30",
+"location": "Offsite - Paradise Park",
+"description": "Music by Geff Phillips and Friends.",
+"url": "https://novipl.librarycalendar.com/event/summer-songfest-27041",
+"city": "Novi"
+},
+{
+"id": "npl-cosplay-0801",
+"title": "Cosplay Crafting - Working with EVA Foam",
+"date": "2026-08-01",
+"time": "13:00",
+"location": "Novi Public Library - iCube Makerspace",
+"description": "Learn to start your own cosplay.",
+"url": "https://novipl.librarycalendar.com/event/cosplay-crafting-working-eva-foam-25277",
 "city": "Novi"
 }
 ]
