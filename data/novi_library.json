@@ -1,25 +1,85 @@
 {
 "source": "Novi Public Library",
-"last_updated": "2026-07-18T14:00:00Z",
+"last_updated": "2026-07-19T00:00:00Z",
 "events": [
 {
-"id": "npl-001",
-"title": "Summer Reading Program Kickoff",
+"id": "npl-baby-time-0720",
+"title": "Baby Time",
 "date": "2026-07-20",
 "time": "14:00",
-"location": "Novi Public Library - Main Room",
-"description": "Kickoff event for the summer reading challenge.",
-"url": "https://novipl.librarycalendar.com/event/1",
+"location": "Novi Public Library - West Meeting Room",
+"description": "Lap-sit program for babies 0-12 months.",
+"url": "https://novipl.librarycalendar.com/event/baby-time-25151",
 "city": "Novi"
 },
 {
-"id": "npl-002",
-"title": "Evening Book Club",
+"id": "npl-masterpiece-0720",
+"title": "Masterpiece Monday",
+"date": "2026-07-20",
+"time": "18:30",
+"location": "Novi Public Library - Youth Activity Room",
+"description": "Guided painting in a relaxed setting.",
+"url": "https://novipl.librarycalendar.com/event/masterpiece-monday-24793",
+"city": "Novi"
+},
+{
+"id": "npl-chicken-little-0720",
+"title": "Chicken Little & Friends with MellyPop!",
+"date": "2026-07-20",
+"time": "19:00",
+"location": "Novi Public Library - Whole Meeting Room",
+"description": "Puppet performance.",
+"url": "https://novipl.librarycalendar.com/event/placeholder-mellypop-24601",
+"city": "Novi"
+},
+{
+"id": "npl-tuesday-tunes-0721",
+"title": "Tuesday Tunes on the Patio",
+"date": "2026-07-21",
+"time": "11:30",
+"location": "Novi Public Library - Patio",
+"description": "Live music and lunch.",
+"url": "https://novipl.librarycalendar.com/event/copy-tuesday-tunes-patio-27502",
+"city": "Novi"
+},
+{
+"id": "npl-spanish-conv-0721",
+"title": "Spanish Conversation Group",
+"date": "2026-07-21",
+"time": "18:30",
+"location": "Novi Public Library - Board Room",
+"description": "All levels of Spanish speakers welcome.",
+"url": "https://novipl.librarycalendar.com/event/spanish-conversation-group-23558",
+"city": "Novi"
+},
+{
+"id": "npl-dino-bath-0722",
+"title": "Dinosaur Egg Bath Bombs (Tween)",
 "date": "2026-07-22",
 "time": "19:00",
-"location": "Novi Public Library - Meeting Room A",
-"description": "Discussing the latest mystery novel selection.",
-"url": "https://novipl.librarycalendar.com/event/2",
+"location": "Novi Public Library - Youth Activity Room",
+"description": "Create a bath bomb egg.",
+"url": "https://novipl.librarycalendar.com/event/dinosaur-egg-bath-bombs-tween-24820",
+"city": "Novi"
+},
+{
+"id": "npl-knit-0723",
+"title": "Knit 2gether Knitting Group",
+"date": "2026-07-23",
+"time": "10:00",
+"location": "Novi Public Library - Board Room",
+"description": "Gather for projects and companionship.",
+"url": "https://novipl.librarycalendar.com/event/knit2gether-knitting-group-24773",
+"city": "Novi"
+},
+{
+"id": "npl-summer-songfest-0723",
+"title": "Summer Songfest (Paradise Park)",
+"date": "2026-07-23",
+"time": "18:30",
+"location": "Offsite - Paradise Park",
+"description": "Music by David Landry and the Do It Again Band.",
+"url": "https://novipl.librarycalendar.com/event/summer-songfest-27039",
 "city": "Novi"
 }
 ]
