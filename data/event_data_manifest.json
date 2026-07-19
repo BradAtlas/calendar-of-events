@@ -1,9 +1,14 @@
 {
-"sources": [
-{
-"name": "Novi Public Library",
-"city": "Novi",
-"file": "data/novi_library.json"
-}
-]
+  "sources": [
+    {
+      "name": "Novi Public Library",
+      "city": "Novi",
+      "file": "data/novi_library.json"
+    },
+    {
+      "name": "City of Novi Calendar",
+      "city": "Novi",
+      "file": "data/novi_city.json"
+    }
+  ]
 }
