@@ -1,0 +1,106 @@
+{
+"source": "City of Novi Calendar",
+"last_updated": "2026-07-19T00:00:00Z",
+"events": [
+{
+"id": "novicity-festival-chariots-0719",
+"title": "Festival of Chariots",
+"date": "2026-07-19",
+"time": "TBD",
+"location": "Novi",
+"description": "City of Novi community event.",
+"url": "https://www.calendarwiz.com/calendars/calendar.php?crd=novicity",
+"city": "Novi"
+},
+{
+"id": "novicity-long-range-planning-0720",
+"title": "Long-Range Strategic Planning Committee Meeting",
+"date": "2026-07-20",
+"time": "18:00",
+"location": "Novi City Hall",
+"description": "Strategic planning committee session.",
+"url": "https://www.calendarwiz.com/calendars/calendar.php?crd=novicity",
+"city": "Novi"
+},
+{
+"id": "novicity-july-board-review-0721",
+"title": "July Board of Review",
+"date": "2026-07-21",
+"time": "TBD",
+"location": "Novi City Hall",
+"description": "Board of review session.",
+"url": "https://www.calendarwiz.com/calendars/calendar.php?crd=novicity",
+"city": "Novi"
+},
+{
+"id": "novicity-tuesday-tunes-0721",
+"title": "Tuesday Tunes on the Patio",
+"date": "2026-07-21",
+"time": "11:30",
+"location": "Novi Public Library - Patio",
+"description": "Live music and lunch.",
+"url": "https://www.calendarwiz.com/calendars/calendar.php?crd=novicity",
+"city": "Novi"
+},
+{
+"id": "novicity-street-sounds-0721",
+"title": "Street Sounds",
+"date": "2026-07-21",
+"time": "18:00",
+"location": "Twelve Mile Crossing at Fountain Walk",
+"description": "Outdoor concert series.",
+"url": "https://www.calendarwiz.com/calendars/calendar.php?crd=novicity",
+"city": "Novi"
+},
+{
+"id": "novicity-art-workshop-0722",
+"title": "Sizzling Summer Art Workshop",
+"date": "2026-07-22",
+"time": "10:00",
+"location": "Fuerst Park",
+"description": "Hands-on art workshop for the community.",
+"url": "https://www.calendarwiz.com/calendars/calendar.php?crd=novicity",
+"city": "Novi"
+},
+{
+"id": "novicity-planning-commission-0722",
+"title": "Planning Commission",
+"date": "2026-07-22",
+"time": "19:00",
+"location": "Novi City Hall",
+"description": "Public meeting of the Planning Commission.",
+"url": "https://www.calendarwiz.com/calendars/calendar.php?crd=novicity",
+"city": "Novi"
+},
+{
+"id": "novicity-songfest-0723",
+"title": "Library Summer Songfest Concert",
+"date": "2026-07-23",
+"time": "18:30",
+"location": "Offsite - Paradise Park",
+"description": "Music by David Landry and the Do It Again Band.",
+"url": "https://www.calendarwiz.com/calendars/calendar.php?crd=novicity",
+"city": "Novi"
+},
+{
+"id": "novicity-pour-on-the-shore-0724",
+"title": "Novi Parks Foundation Pour on the Shore",
+"date": "2026-07-24",
+"time": "TBD",
+"location": "Lakeshore Park",
+"description": "Foundation fundraising event.",
+"url": "https://www.calendarwiz.com/calendars/calendar.php?crd=novicity",
+"city": "Novi"
+},
+{
+"id": "novicity-early-voting-0725",
+"title": "Early Voting",
+"date": "2026-07-25",
+"time": "08:30",
+"location": "Novi City Hall",
+"description": "Early voting for local elections.",
+"url": "https://www.calendarwiz.com/calendars/calendar.php?crd=novicity",
+"city": "Novi"
+}
+]
+}
